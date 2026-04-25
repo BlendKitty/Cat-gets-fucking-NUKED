@@ -6,9 +6,11 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.MoveTo,
 		C3.Plugins.Mouse,
 		C3.Plugins.Audio,
+		C3.Plugins.Touch,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Mouse.Cnds.OnClick,
+		C3.Plugins.Touch.Cnds.IsInTouch,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Behaviors.MoveTo.Acts.MoveToPosition,
 		C3.Plugins.System.Cnds.EveryTick,
@@ -35,7 +37,8 @@ self.C3_JsPropNameTable = [
 	{explosion: 0},
 	{Audio: 0},
 	{silicone: 0},
-	{siliconetext: 0}
+	{siliconetext: 0},
+	{Touch: 0}
 ];
 
 self.InstanceType = {
@@ -47,5 +50,6 @@ self.InstanceType = {
 	explosion: class extends self.ISpriteInstance {},
 	Audio: class extends self.IInstance {},
 	silicone: class extends self.ISpriteInstance {},
-	siliconetext: class extends self.ITextInstance {}
+	siliconetext: class extends self.ITextInstance {},
+	Touch: class extends self.IInstance {}
 }
