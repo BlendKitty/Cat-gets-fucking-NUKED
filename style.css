@@ -8,6 +8,7 @@ html, body {
 body {
 	background: #000000;
 	color: white;
+	cursor: url("cursor.png"), auto;
 }
 
 input[type="file"] {
